@@ -121,7 +121,7 @@ public class MovieListActivity extends AppCompatActivity {
                     // use the option at index 3 or w342 as a fallback
                     posterSize = posterSizeOptions.optString(3, "w342");
                     int i = Log.i(TAG, String.format("Loaded configuration with imageBaseUrl %s and posterSize %s",
-                            config.getImageUrl(),
+                            config.getImageBaseUrl(),
                             config.getPosterSize()));
                     // pass config to adapter
                     adapter.setConfig(config);
